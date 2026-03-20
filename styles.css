@@ -1,0 +1,138 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    grid-auto-rows: 1fr; 
+}
+
+.img_card{
+    width: 100%;
+    height: 100%;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div5 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div6 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.div7 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.div8 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.div9 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.img_card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    display: none;
+}
+
+#listView:checked ~ .parent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+#listView:checked ~ .parent .item {
+    display: block;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#listView:checked ~ .parent img {
+    width: 100%;
+    height: auto;
+}
+
+#listView:checked ~ .parent .info {
+    display: block;
+    margin-top: 10px;
+}
+#listView:checked ~ .parent {
+    display: flex;
+    flex-direction: column;
+}
+.info {
+    display: none;
+}
+
+#listView:checked ~ .parent .info {
+    display: block;
+    margin-top: 10px;
+}
+#listView:checked ~ .parent .item {
+    display: flex;
+    flex-direction: column;
+}
+#listView:checked ~ .parent .info h5 {
+    order: -1;
+    margin-bottom: 10px;
+}
+
+.title,
+.info {
+    display: none;
+}
+
+#listView:checked ~ .parent .title,
+#listView:checked ~ .parent .info {
+    display: block;
+}
+
+#listView:checked ~ .parent .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#listView:checked ~ .parent .item {
+    background-color: #f5f5f5;   
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#listView:checked ~ .parent .item {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title {
+    font-size: 1.75rem;
+}
